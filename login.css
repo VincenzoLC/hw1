@@ -1,0 +1,364 @@
+body /*Annulla gli spazi tra i tag e il body*/
+{
+    padding:0;
+    margin:0;
+}
+#nav /*Barra di navigazione che comprende left-center-right*/
+{
+    
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 10%;
+}
+#left /*Logo di NOTHING della nav*/
+{
+    display:flex;
+    font-family: doto;
+    font-size: 2em;
+    flex-shrink: 1;
+    margin-left: 0.2%;
+    padding-left:0.2%;
+}
+#left a /*link del logo NOTHING*/
+{
+    color:black;
+    text-decoration: none;
+}
+#center
+{
+    display:flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    height: 90%;
+}
+img
+{
+    object-fit:fill;
+    width:100%;
+    height: 100%;
+}
+#divimg
+{
+    width:65%;
+    height:100%;
+ 
+}
+#divform
+{
+    width:35%;
+    height:100%;
+    padding-left: 5px;
+    background-color: #F3F5F8;
+}
+.error{
+    display: block;
+    background-color: #e22134;
+    padding: 14px 14px 12px;
+    color: #fff;
+    font-size: 14px;
+    line-height: 25px;
+    width: 100%;
+  }
+ p input
+{
+    width: 80%;
+    height: 40px;
+    border:none;
+    border-radius: 100px;
+    margin:5px;
+    margin-left: 20px;
+    padding:2%;
+    font-size: small;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#bottoneEmailFreccia
+{
+    cursor:pointer;
+}
+#submit
+{
+    cursor:pointer;
+    color: #FFFFFF;
+    background-color: #000;
+}
+span
+{
+    display: block;
+    margin:5px 0px 5px 20px;
+    font-size: small;
+}
+p
+{
+    display: inline;
+}
+
+footer /*Parte finale della pagina*/
+    {
+        width: 100%;
+        height: 600px;
+        display:flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+
+    }
+footer #divtop /*Div superiore del footer*/
+{
+    width: 100%;
+    height: 70%;
+    display:flex;
+    flex-wrap: wrap;
+    
+}
+footer #divtop .box1 /*Il div superiore viene diviso in altri div*/
+{
+    width: 60%;  
+    height: 100%; 
+    display: flex;
+    background-color: #000;
+    justify-content: space-between;
+}
+footer #divtop .box1 ul /*Elenchi presenti nel footer*/
+{
+    list-style: none; /* Rimuove i pallini */
+    margin-right:50px;
+    margin-left: 50px;
+    margin-top:10px;
+    padding:0;
+    color:white;
+    
+}
+.box1  a /*Link degli elenchi*/
+{
+    text-decoration: none;
+    color:white;
+}
+#email /*div che contiene l'input per inserire l'email*/
+{
+    width: 85%;
+    height: 50px;
+    padding:5px;
+    margin-left: 10px;
+    border: 1px solid white;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    
+}
+footer #divtop .box2 h4  /*Intestazione del box 2(iscriviti alla newsletter)*/
+{
+    margin-left: 10px;
+    color:white;
+}
+#email input /*input per inserire l'email*/
+{
+    width:90%;
+    height: 100%;
+    background-color: #000;
+    color:white;
+    border:none;
+    font-family: doto;
+}
+#email input::placeholder /*testo che appare di default all' input*/ 
+{
+    color:white;
+}
+#email input:focus /*Usato per rimuovere bordi ed effetti al click dell'input*/
+{
+    outline: none;
+    border: none;
+}
+#email button /*Bottone della email(freccia >)*/
+{
+    font-family: doto;
+    width:10%;
+    height:100%;
+    margin:0;
+    background-color: #000;
+    border:none;
+    color:white;
+}
+footer #divtop .box2 /*Box del footer che contiene tutta la parte pagamenti e newsletter*/
+{
+    padding-top: 1%f;
+    width: 40%;  /* Due colonne */
+    height: 100%; /* Due righe */
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    background-color:#000; 
+}
+#pagamenti /*div per le icone di pagamento*/
+{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-top: 5%;
+    margin-right: 2%;
+    margin-left: 3%;
+}
+#pagamenti img /*Immagini icone pagamento*/
+{
+    width: 10%;
+   height: 10%;
+   object-fit: cover;
+}
+footer #divbottom /*Div in fondo alla pagina*/
+{
+    background-color:#000;
+    width: 100%;
+    height: 30%;
+    border-top:2px solid white;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+#informativa
+{
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 2%;
+    padding-left: 2%;
+    color:white;
+}
+#informativa a
+{
+    color:white;
+}
+#informativa #container
+{
+    display:flex;
+    margin-bottom: 5%;
+}
+
+#informativa  input 
+{
+    appearance: none;             /* Rimuove lo stile di default */
+    -webkit-appearance: none;
+    width: 15px;
+    height: 15px;
+    background-color: black;      /* Sfondo nero */
+    border: 1px solid white;      /* Bordo bianco */
+    cursor: pointer;
+    position: relative;
+    transition: all 0.2s ease;
+    margin-right: 3%;
+}
+/* Quando è selezionata */
+#informativa input:checked {
+    background-color: black;      /* Sfondo resta nero */
+    border-color: white;
+  }
+  
+  /* Aggiunge il segno di spunta */
+#informativa input:checked::after {
+    content: "";
+    position: absolute;
+    left: 33%;
+    top: 10%;
+    width: 3px;
+    height: 6px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    border-radius: 1px;
+  }
+#divbottom div 
+{
+    margin-top:15px;
+    color:white;
+}
+#divbottom div a
+{
+    text-decoration: none;
+}
+#divbottom #end /*div degli ultimi link della pagina*/
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+}
+#divbottom #end2 /*div degli ultimi link della pagina*/
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+#end div
+{
+    margin-right: 40px;
+}
+#end2 div
+{
+    margin-right: 40px;
+}
+#divbottom div img /*Immagini dei social alla fine della pagina*/
+{
+    object-fit: contain;
+    width: 40px;
+    height: 40px;
+    position: static;
+}
+
+@media (max-width: 1000px) 
+{
+    #divimg
+    {
+        display:none;
+    }
+    #divform
+    {
+        width:100%;
+    }
+    #informativa
+    {
+        display:none;
+    }
+ #informativa #container div
+    {
+        font-size: 8px;
+    }
+    footer #divtop .box1
+    {
+        flex-wrap: wrap;
+    }
+    #box1 ul,li,h4
+    {
+        font-size: 11px;
+        padding:0;
+        margin:0;
+    }
+    .box2 
+    {
+        padding-top:20px;
+    }
+    #end
+    {
+        flex-direction: column;
+        margin-left: 5px;
+    }
+    #end2
+    {
+        flex-direction: column;
+    }
+    #end div
+    {
+        font-size: 12px;
+    }
+}
+@media (min-width: 1000px) 
+{
+    #informativa
+    {
+        display:none;
+    }
+}
+
